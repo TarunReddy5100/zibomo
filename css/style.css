@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+:root {
+  --header-height: 3rem;
+  --nav-width: 68px;
+  --first-color: #2546cc;
+  --first-color-light: #afa5d9;
+  --white-color: #f7f6fb;
+  --body-font: "Nunito", sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #cccfd1be !important;
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: 0.5s;
+}
+a {
+  text-decoration: none !important;
+}
+ul li {
+  text-decoration: none;
+  text-align: left;
+  list-style: none;
+  padding-left: -10px !important;
+}
+
+/* Start Header */
+.header {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--white-color);
+  z-index: var(--z-fixed);
+  transition: 0.5s;
+}
+.header_toggle {
+  color: #000F40;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header_img {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header_img img {
+  width: 40px;
+}
+.input-search[type=search] {
+  background-image: url('../image/search.png');
+  background-size: 17px;
+  background-position: 98%;
+  background-repeat: no-repeat;
+  border: 1px solid #a7a7a7fa;
+  width: 200%;
+}
+.navbar-icon{
+  font-size: 20px !important;
+  padding: 0 !important;
+  margin: 0px 15px;
+}
+.navbar-badge{
+  font-size: 12px !important;
+  font-weight: 100;
+}
+.main-header-container .header-link {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.avatar.avatar-sm {
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  font-size: 0.65rem;
+}
+.avatar.avatar-rounded {
+  border-radius: 50%;
+}
+.avatar {
+  position: relative;
+  height: 2.625rem;
+  width: 2.625rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+
+.main-header-container .main-header-dropdown {
+  box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+  inset-block-start: 0.875rem !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+.header-profile-dropdown {
+  min-width: 11rem !important;
+} 
+
+.profile-icon, .profile-icon a{
+  color: #000F40 !important;
+}
+
+.profile-icon:hover,.profile-icon:hover a{
+  color: #DC1F26 !important;
+}
+/* End Header */
+
+/* Start Horizontal Navbar */
+.body-pd {
+  padding-left: calc(var(--nav-width) + 1rem);
+}
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: #D0DFFF;
+  padding: 0.5rem 1rem 0 0;
+  transition: 0.5s;
+  z-index: var(--z-fixed);
+}
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav_logo,
+.nav_link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.nav_logo {
+  margin-bottom: 2rem;
+}
+.nav_logo-icon {
+  font-size: 1.25rem;
+  color: #000F40;
+}
+.show .nav .nav_logo .nav_logo-icon{
+  display: none !important;
+  transition: ease-in-out 1s;
+}
+.nav_logo-name {
+  color: var(--white-color);
+  font-weight: 700;
+}
+.nav_logo-name img {
+  width: 38% !important;
+}
+.nav_link {
+  position: relative;
+  color: #000F40;
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+.nav_link:hover {
+  color: #DC1F26;
+}
+.nav_icon {
+  font-size: 1.25rem;
+}
+.show {
+  left: 0;
+}
+.active {
+  color: #000F40;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: #000F40;
+}
+.height-100 {
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 2rem);
+  }
+  .header {
+    height: calc(var(--header-height) + 1rem);
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+  .header_img {
+    width: 40px;
+    height: 40px;
+  }
+  .header_img img {
+    width: 45px;
+  }
+  .l-navbar {
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+  .show {
+    width: calc(var(--nav-width) + 156px);
+  }
+  .body-pd {
+    padding-left: calc(var(--nav-width) + 188px);
+  }
+}
+/* End Horizontal Navbar */
+
+.main-section {
+  width: 100% !important;
+  padding-top:100px !important;
+}
+.card{
+  border-radius: 10px !important;
+  border: 1px solid #9b999996!important;
+  box-shadow: 0px 0px 10px #9b999996!important;
+}
+.card-title h5 span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.cart-icon-1{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #320faf;
+  background-color: #e4eafa;
+  border-radius: 50%;
+}
+.cart-icon-link-1{
+  position: absolute;
+  top: 15px;
+  left: 17px;
+}
+.cart-icon-2{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #058d39;
+  background-color: #c8fcdc;
+  border-radius: 50%;
+}
+.cart-icon-link-2{
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+.cart-icon-3{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #f78d15;
+  background-color: #f3e1cc;
+  border-radius: 50%;
+}
+.cart-icon-link-3{
+  position: absolute;
+  top: 15px;
+  left: 17px;
+}
+.cards-sales-count{
+  font-weight: 900px;
+}
+
+/* Start Footer */
+footer{
+  border-top: 1px solid #9b999996;
+}
+/* End Footer */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40% !important;
+}
+.modal-content input{
+  margin-bottom: 20px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
