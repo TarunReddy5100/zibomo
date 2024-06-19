@@ -168,8 +168,7 @@ ul li {
   margin-bottom: 2rem;
 }
 .nav_logo-icon {
-  font-size: 1.25rem;
-  color: #000F40;
+  width: 45%;
 }
 .show .nav .nav_logo .nav_logo-icon{
   display: none !important;
