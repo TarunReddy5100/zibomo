@@ -95,8 +95,40 @@
                         </span>
                     </a>
                     <div class="nav_list">
-                        <a href="index.html" class="nav_link"><i class='bx bx-tachometer nav_icon'></i>
+                        <a href="index.html" class="nav_link active"><i class='bx bx-tachometer nav_icon'></i>
                             <span class="nav_name">Dashboard</span> </a>
+                        <div class="d-inline-flex gap-1">
+                            <a class=" nav_link" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button"
+                                aria-expanded="false" aria-controls="multiCollapseExample2">
+                                <span><i class="bx bx-message-square-detail nav_icon"></i></span>
+                                <span class="nav_name">Franchise
+                                    <span class="nav-dropdown-icon"><i class='bx bx-chevron-down'></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="">
+                                        <ul style="list-style: none;">
+                                            <li style="list-style: none;">
+                                                <a href="create-franchise.html" class="nav_link">
+                                                    <span><i class='bx bx-radio-circle'></i></span>
+                                                    <span>Create Franchise</span>
+    
+                                                </a>
+                                            </li>
+                                            <li style="list-style: none;">
+                                                <a href="all-franchise.html" class="nav_link">
+                                                    <span><i class='bx bx-radio-circle'></i></span>
+                                                    <span>All Franchise</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="d-inline-flex gap-1">
                             <a class=" nav_link" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
                                 aria-expanded="false" aria-controls="multiCollapseExample1">
@@ -115,7 +147,7 @@
                                                 <a href="create-terminal.html" class="nav_link">
                                                     <span><i class='bx bx-radio-circle'></i></span>
                                                     <span>Create Terminal</span>
-
+    
                                                 </a>
                                             </li>
                                             <li style="list-style: none;">
@@ -129,38 +161,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-inline-flex gap-1">
-                            <a class=" nav_link active" data-bs-toggle="collapse" href="#multiCollapseExample2"
-                                role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
-                                <span><i class="bx bx-message-square-detail nav_icon"></i></span>
-                                <span class="nav_name">Franchise
-                                    <span class="nav-dropdown-icon"><i class='bx bx-chevron-down'></i></span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                    <div class="">
-                                        <ul style="list-style: none;">
-                                            <li style="list-style: none;">
-                                                <a href="create-franchise.html" class="nav_link">
-                                                    <span><i class='bx bx-radio-circle'></i></span>
-                                                    <span>Create Franchise</span>
-
-                                                </a>
-                                            </li>
-                                            <li style="list-style: none;">
-                                                <a href="all-franchise.html" class="nav_link">
-                                                    <span><i class='bx bx-radio-circle'></i></span>
-                                                    <span>All Franchise</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    
                         <div class="d-inline-flex gap-1">
                             <a class=" nav_link" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button"
                                 aria-expanded="false" aria-controls="multiCollapseExample3">
@@ -179,7 +180,7 @@
                                                 <a href="create-vender.html" class="nav_link">
                                                     <span><i class='bx bx-radio-circle'></i></span>
                                                     <span>Create Vender</span>
-
+    
                                                 </a>
                                             </li>
                                             <li style="list-style: none;">
@@ -215,9 +216,9 @@
                                 </nav>
                             </div>
                             <div class="col-lg-5 d-flex justify-content-end ps-2">
-                                <a class="btn btn-primary mx-2 " href="#" role="button">
+                                <!-- <a class="btn btn-primary mx-2 " href="#" role="button">
                                     <span><i class='bx bxs-calendar'></i></span>
-                                    <span>13-6-2023-13-6-2024</span></a>
+                                    <span>13-6-2023-13-6-2024</span></a> -->
 
                                 <a class="btn btn-primary " href="#" role="button">
                                     <span><i class='bx bx-export'></i></span>
@@ -254,7 +255,7 @@
                                             <th scope="col">City</th>
                                             <th scope="col">State</th>
                                             <th scope="col">Zip Code</th>
-                                            <th scope="col">Assign Terminal</th>
+                                           
                                             <th scope="col">Action</th>
 
                                         </tr>
@@ -272,7 +273,6 @@
                                             <td>Banglore</td>
                                             <td>Karnataka</td>
                                             <td>530068</td>
-                                            <td>XYZ</td>
                                             <td class="d-flex"><a href="#" class="edit"><i class="fas fa-edit"></i></a>
                                         </tr>
                                         <tr>
@@ -287,7 +287,6 @@
                                             <td>Banglore</td>
                                             <td>Karnataka</td>
                                             <td>530068</td>
-                                            <td>XYZ</td>
                                             <td class="d-flex"><a href="#" class="edit"><i class="fas fa-edit"></i></a>
                                         </tr>
                                         <tr>
@@ -302,7 +301,6 @@
                                             <td>Banglore</td>
                                             <td>Karnataka</td>
                                             <td>530068</td>
-                                            <td>XYZ</td>
                                             <td class="d-flex"><a href="#" class="edit"><i class="fas fa-edit"></i></a>
                                         </tr>
                                         <tr>
@@ -317,7 +315,6 @@
                                             <td>Banglore</td>
                                             <td>Karnataka</td>
                                             <td>530068</td>
-                                            <td>XYZ</td>
                                             <td class="d-flex"><a href="#" class="edit"><i class="fas fa-edit"></i></a>
                                         </tr>
                                         <tr>
@@ -332,7 +329,6 @@
                                             <td>Banglore</td>
                                             <td>Karnataka</td>
                                             <td>530068</td>
-                                            <td>XYZ</td>
                                             <td class="d-flex"><a href="#" class="edit"><i class="fas fa-edit"></i></a>
                                         </tr>
                                         <tr>
@@ -347,12 +343,11 @@
                                             <td>Banglore</td>
                                             <td>Karnataka</td>
                                             <td>530068</td>
-                                            <td>XYZ</td>
                                             <td class="d-flex"><a href="#" class="edit"><i class="fas fa-edit"></i></a>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="d-flex justify-content-between py-4">
+                                <!-- <div class="d-flex justify-content-between py-4">
                                     <div class="col-lg-6 d-flex justify-content-left ms-5">
                                         <nav aria-label="Page navigation example py-5 mx-5  " class="">
                                             <ul class="pagination">
@@ -381,7 +376,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
