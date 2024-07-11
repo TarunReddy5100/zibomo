@@ -49,7 +49,7 @@ ul li {
   transition: 0.5s;
 }
 .header_toggle {
-  color: #000F40;
+  color: #000f40;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -64,20 +64,20 @@ ul li {
 .header_img img {
   width: 40px;
 }
-.input-search[type=search] {
-  background-image: url('../image/search.png');
+.input-search[type="search"] {
+  background-image: url("../image/search.png");
   background-size: 17px;
   background-position: 98%;
   background-repeat: no-repeat;
   border: 1px solid #a7a7a7fa;
   width: 200%;
 }
-.navbar-icon{
+.navbar-icon {
   font-size: 20px !important;
   padding: 0 !important;
   margin: 0px 15px;
 }
-.navbar-badge{
+.navbar-badge {
   font-size: 12px !important;
   font-weight: 100;
 }
@@ -112,7 +112,6 @@ ul li {
   font-weight: 500 !important;
 }
 
-
 .main-header-container .main-header-dropdown {
   box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
   inset-block-start: 0.875rem !important;
@@ -123,14 +122,16 @@ ul li {
 }
 .header-profile-dropdown {
   min-width: 11rem !important;
-} 
-
-.profile-icon, .profile-icon a{
-  color: #000F40 !important;
 }
 
-.profile-icon:hover,.profile-icon:hover a{
-  color: #DC1F26 !important;
+.profile-icon,
+.profile-icon a {
+  color: #000f40 !important;
+}
+
+.profile-icon:hover,
+.profile-icon:hover a {
+  color: #dc1f26 !important;
 }
 /* End Header */
 
@@ -144,7 +145,7 @@ ul li {
   left: -30%;
   width: var(--nav-width);
   height: 100vh;
-  background-color: #D0DFFF;
+  background-color: #d0dfff;
   padding: 0.5rem 1rem 0 0;
   transition: 0.5s;
   z-index: var(--z-fixed);
@@ -170,7 +171,7 @@ ul li {
 .nav_logo-icon {
   width: 45%;
 }
-.show .nav .nav_logo .nav_logo-icon{
+.show .nav .nav_logo .nav_logo-icon {
   display: none !important;
   transition: ease-in-out 1s;
 }
@@ -183,12 +184,12 @@ ul li {
 }
 .nav_link {
   position: relative;
-  color: #000F40;
+  color: #000f40;
   margin-bottom: 1.5rem;
   transition: 0.3s;
 }
 .nav_link:hover {
-  color: #DC1F26;
+  color: #dc1f26;
 }
 .nav_icon {
   font-size: 1.25rem;
@@ -197,7 +198,7 @@ ul li {
   left: 0;
 }
 .active {
-  color: #000F40;
+  color: #000f40;
 }
 .active::before {
   content: "";
@@ -205,7 +206,7 @@ ul li {
   left: 0;
   width: 2px;
   height: 32px;
-  background-color: #000F40;
+  background-color: #000f40;
 }
 .height-100 {
   height: 100vh;
@@ -241,18 +242,18 @@ ul li {
 
 .main-section {
   width: 100% !important;
-  padding-top:100px !important;
+  padding-top: 100px !important;
 }
-.card{
+.card {
   border-radius: 10px !important;
-  border: 1px solid #9b999996!important;
-  box-shadow: 0px 0px 10px #9b999996!important;
+  border: 1px solid #9b999996 !important;
+  box-shadow: 0px 0px 10px #9b999996 !important;
 }
 .card-title h5 span {
   font-size: 1rem;
   font-weight: 400;
 }
-.cart-icon-1{
+.cart-icon-1 {
   position: relative;
   width: 70px;
   height: 70px;
@@ -260,12 +261,12 @@ ul li {
   background-color: #e4eafa;
   border-radius: 50%;
 }
-.cart-icon-link-1{
+.cart-icon-link-1 {
   position: absolute;
   top: 15px;
   left: 17px;
 }
-.cart-icon-2{
+.cart-icon-2 {
   position: relative;
   width: 70px;
   height: 70px;
@@ -273,12 +274,12 @@ ul li {
   background-color: #c8fcdc;
   border-radius: 50%;
 }
-.cart-icon-link-2{
+.cart-icon-link-2 {
   position: absolute;
   top: 15px;
   left: 25px;
 }
-.cart-icon-3{
+.cart-icon-3 {
   position: relative;
   width: 70px;
   height: 70px;
@@ -286,17 +287,17 @@ ul li {
   background-color: #f3e1cc;
   border-radius: 50%;
 }
-.cart-icon-link-3{
+.cart-icon-link-3 {
   position: absolute;
   top: 15px;
   left: 17px;
 }
-.cards-sales-count{
+.cards-sales-count {
   font-weight: 900px;
 }
 
 /* Start Footer */
-footer{
+footer {
   border-top: 1px solid #9b999996;
 }
 /* End Footer */
@@ -310,8 +311,8 @@ footer{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content {
   background-color: #fefefe;
@@ -320,7 +321,7 @@ footer{
   border: 1px solid #888;
   width: 40% !important;
 }
-.modal-content input{
+.modal-content input {
   margin-bottom: 20px;
 }
 .close {
@@ -334,8 +335,17 @@ footer{
   color: black;
   text-decoration: none;
   cursor: pointer;
-} 
+}
 
-td,th{
+td,
+th {
   vertical-align: baseline;
+}
+@media screen and (max-width: 1000px) {
+  .dashboard-cards-container {
+    flex-direction: column !important;
+  }
+  .dashboard-card{
+    width: 100% !important;
+  }
 }
