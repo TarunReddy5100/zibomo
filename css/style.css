@@ -335,3 +335,7 @@ footer{
   text-decoration: none;
   cursor: pointer;
 } 
+
+td,th{
+  vertical-align: baseline;
+}
